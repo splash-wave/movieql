@@ -16,7 +16,14 @@ export const people = [
     name: 'Todd',
     age: 24,
     gender: 'male'
+  },
+  {
+    id: 4,
+    name: 'Sam',
+    age: 60,
+    gender: 'female'
   }
+  
 ];
 export const getById = id => {
   const filteredPeople = people.filter(person => people.id === id);
