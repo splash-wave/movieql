@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/arimkim/movieql#readme",
   "dependencies": {
-    "graphql-yoga": "^1.18.3"
+    "graphql-yoga": "^1.18.3",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
