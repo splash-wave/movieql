@@ -1,31 +1,31 @@
 export const people = [
   {
     id: 0,
-    name: 'Ashe',
+    name: "Ashe",
     age: 32,
-    gender: 'female'
+    gender: "female"
   },
   {
     id: 1,
-    name: 'John',
+    name: "John",
     age: 45,
-    gender: 'male'
+    gender: "male"
   },
   {
     id: 2,
-    name: 'Todd',
+    name: "Todd",
     age: 24,
-    gender: 'male'
+    gender: "male"
   },
   {
     id: 4,
-    name: 'Sam',
+    name: "Sam",
     age: 60,
-    gender: 'female'
+    gender: "female"
   }
-  
 ];
+
 export const getById = id => {
-  const filteredPeople = people.filter(person => people.id === id);
+  const filteredPeople = people.filter(person => person.id === id);
   return filteredPeople[0];
 };
