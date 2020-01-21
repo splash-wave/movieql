@@ -24,13 +24,13 @@ let movies = [
 export const getMovies = () => movies;
 
 export const getById = id => {
-  const filteredMovies = movies.filter(movie => movie.id === String(id));
+  const filteredMovies = movies.filter(movie => movie.id === id);
   return filteredMovies[0];
 };
 
 //deleteMovie 같은 아이디를 가지지 않은 movies의 배열 리턴
 export const deleteMovie = id => {
-  const cleanedMovies = movies.filter(movie => movie.id !== String(id));
+  const cleanedMovies = movies.filter(movie => movie.id !== id);
   if (movies.length > cleanedMovies.length) {
     movies = cleanedMovies;
     return true;
@@ -42,7 +42,7 @@ export const deleteMovie = id => {
 //addMovie
 export const addMovie = (name, score) => {
   const newMovie = {
-    id: `${movies.length + 1}`,
+    id: movies.length + 1,
     name,
     score
   };
